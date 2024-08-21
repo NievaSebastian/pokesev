@@ -1,10 +1,16 @@
-function App() {
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyles from './styles/GlobalStyles';
+import { theme } from './styles/theme';
+import Pokedex from './containers/Pokedex';
+import Header from './components/Header';
 
-  return (
-    <>
-      <h1>Futura Pokesev</h1>
-    </>
-  )
-}
+const App = () => (
+  <ThemeProvider theme={theme}>
+    <GlobalStyles />
+    <Header />
+    <Pokedex />
+  </ThemeProvider>
+);
 
-export default App
+export default App;
