@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './styles/GlobalStyles';
 import { theme } from './styles/theme';
-import Pokedex from './containers/Pokedex';
+import Pokedex from './Pages/Pokedex';
 import Header from './components/Header';
 
 const App = () => (
